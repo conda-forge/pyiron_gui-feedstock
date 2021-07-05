@@ -1,5 +1,5 @@
 {% set name = "pyiron_gui" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_gui-{{ version }}.tar.gz
-  sha256: 0d5b071e0ee161e69bf8df574d76ed40fde7a28c01bb2449786d6b73c7786fee
+  sha256: 0efa17d4c7eac5f3b5d44306fd78e8ec910f45612375c08579e9776d4076eca2
 
 build:
   number: 0
@@ -40,7 +40,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Extended graphical user interface (GUI) for pyiron the integrated development environment (IDE)'
+  summary: Extended graphical user interface (GUI) for pyiron the integrated development environment (IDE)
   description: |
     extended graphical user interface (GUI) for pyiron the integrated development environment (IDE)
   doc_url: https://github.com/pyiron/pyiron_gui
