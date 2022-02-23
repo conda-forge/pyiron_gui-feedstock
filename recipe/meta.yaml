@@ -1,5 +1,5 @@
 {% set name = "pyiron_gui" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_gui-{{ version }}.tar.gz
-  sha256: e979e6aea39eb58bf8499f493b127958a328a6bec7200dde0489910ab7a7994d
+  sha256: 19dfb013a7abb4563e2c2597be0993eb709d106191c7a824eb5fb01098460845
 
 build:
   number: 0
