@@ -1,0 +1,21 @@
+From 40525ebb82de5ce44ca639f9b4acca45249a5fc8 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Mon, 21 Nov 2022 09:51:30 -0700
+Subject: [PATCH] Update setup.py
+
+---
+ setup.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index c5086ee..5e77fcd 100644
+--- a/setup.py
++++ b/setup.py
+@@ -38,5 +38,6 @@
+         'matplotlib==3.6.2',
+         'numpy==1.23.4',
+         'pandas==1.5.1',
+-    ]
++    ],
++    cmdclass=versioneer.get_cmdclass(),
+ )
