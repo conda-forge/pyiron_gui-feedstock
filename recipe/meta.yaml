@@ -1,5 +1,5 @@
 {% set name = "pyiron_gui" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_gui-{{ version }}.tar.gz
-  sha256: 13923d79263ce188cb8cfec3b4dd8e99d94580f3fa792cb1807caa4fb0524db6
-  patches:
-    - setup.patch
+  sha256: jan-janssen/pyiron_gui-feedstock
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,11 +21,11 @@ requirements:
   run:
     - python >=3.5
     - ipywidgets =7.7.1
-    - pyiron_base >=0.5.22
-    - pyiron_atomistics >=0.2.54
-    - numpy >=1.23.2
-    - pandas >=1.4.3
-    - matplotlib-base >=3.5.3
+    - pyiron_base >=0.5.28
+    - pyiron_atomistics >=0.2.59
+    - numpy >=1.23.4
+    - pandas >=1.5.1
+    - matplotlib-base >=3.6.2
 
 test:
   imports:
