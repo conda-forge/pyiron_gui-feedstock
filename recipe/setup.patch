@@ -1,21 +1,99 @@
-From d69c1ff524f7c22a5d215e3c99ce2f81204dd0ab Mon Sep 17 00:00:00 2001
+From 9923f5f51d50e6bdf889f0035ad3867777f5fb02 Mon Sep 17 00:00:00 2001
 From: Jan Janssen <janssen@lanl.gov>
-Date: Mon, 21 Nov 2022 10:01:23 -0700
-Subject: [PATCH] update
+Date: Mon, 21 Nov 2022 10:47:17 -0700
+Subject: [PATCH] fix dos2unix and add versioneer
 
 ---
- setup.py | 3 ++-
- 1 file changed, 2 insertions(+), 1 deletion(-)
+ setup.py | 85 ++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 43 insertions(+), 42 deletions(-)
 
 diff --git a/setup.py b/setup.py
-index 6ddf3d4..756de37 100644
+index 6ddf3d4..84ee22a 100644
 --- a/setup.py
 +++ b/setup.py
-@@ -38,5 +38,6 @@
-         'matplotlib>=3.5.3',
-         'numpy>=1.23.2',
-         'pandas>=1.4.3',
+@@ -1,42 +1,43 @@
+-"""
+-Setuptools based setup module
+-"""
+-from setuptools import setup, find_packages
+-
+-import versioneer
+-
+-setup(
+-    name='pyiron_gui',
+-    version=versioneer.get_version(),
+-    description='Repository for GUI plugins to the pyiron IDE.',
+-    long_description='http://pyiron.org',
+-
+-    url='https://github.com/pyiron/pyiron_gui',
+-    author='Max-Planck-Institut für Eisenforschung GmbH - Computational Materials Design (CM) Department',
+-    author_email='siemer@mpie.de',
+-    license='BSD',
+-
+-    classifiers=[
+-        'Development Status :: 4 - Beta',
+-        'Topic :: Scientific/Engineering :: Physics',
+-        'License :: OSI Approved :: BSD License',
+-        'Intended Audience :: Science/Research',
+-        'Operating System :: OS Independent',
+-        'Programming Language :: Python :: 3',
+-        'Programming Language :: Python :: 3.7',
+-        'Programming Language :: Python :: 3.8',
+-        'Programming Language :: Python :: 3.9',
+-        'Programming Language :: Python :: 3.10'
+-    ],
+-
+-    keywords='pyiron',
+-    packages=find_packages(exclude=["*tests*", "*docs*", "*binder*", "*conda*", "*notebooks*", "*.ci_support*"]),
+-    install_requires=[
+-        'pyiron_base>=0.5.22',
+-        'pyiron_atomistics>=0.2.54',
+-        'ipywidgets>=7.7.1',
+-        'matplotlib>=3.5.3',
+-        'numpy>=1.23.2',
+-        'pandas>=1.4.3',
 -    ]
+-)
++"""
++Setuptools based setup module
++"""
++from setuptools import setup, find_packages
++
++import versioneer
++
++setup(
++    name='pyiron_gui',
++    version=versioneer.get_version(),
++    description='Repository for GUI plugins to the pyiron IDE.',
++    long_description='http://pyiron.org',
++
++    url='https://github.com/pyiron/pyiron_gui',
++    author='Max-Planck-Institut für Eisenforschung GmbH - Computational Materials Design (CM) Department',
++    author_email='siemer@mpie.de',
++    license='BSD',
++
++    classifiers=[
++        'Development Status :: 4 - Beta',
++        'Topic :: Scientific/Engineering :: Physics',
++        'License :: OSI Approved :: BSD License',
++        'Intended Audience :: Science/Research',
++        'Operating System :: OS Independent',
++        'Programming Language :: Python :: 3',
++        'Programming Language :: Python :: 3.7',
++        'Programming Language :: Python :: 3.8',
++        'Programming Language :: Python :: 3.9',
++        'Programming Language :: Python :: 3.10'
++    ],
++
++    keywords='pyiron',
++    packages=find_packages(exclude=["*tests*", "*docs*", "*binder*", "*conda*", "*notebooks*", "*.ci_support*"]),
++    install_requires=[
++        'pyiron_base>=0.5.22',
++        'pyiron_atomistics>=0.2.54',
++        'ipywidgets>=7.7.1',
++        'matplotlib>=3.5.3',
++        'numpy>=1.23.2',
++        'pandas>=1.4.3',
 +    ],
 +    cmdclass=versioneer.get_cmdclass(),
- )
++)
