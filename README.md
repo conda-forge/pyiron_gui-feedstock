@@ -1,11 +1,11 @@
-About pyiron_gui
-================
+About pyiron_gui-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyiron_gui-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyiron/pyiron_gui
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyiron_gui-feedstock/blob/main/LICENSE.txt)
 
 Summary: Extended graphical user interface (GUI) for pyiron the integrated development environment (IDE)
 
