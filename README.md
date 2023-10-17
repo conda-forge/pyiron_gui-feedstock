@@ -7,14 +7,7 @@ Home: https://github.com/pyiron/pyiron_gui
 
 Package license: BSD-3-Clause
 
-Summary: Extended graphical user interface (GUI) for pyiron the integrated development environment (IDE)
-
-Development: https://github.com/pyiron/pyiron_gui
-
-Documentation: https://github.com/pyiron/pyiron_gui
-
-extended graphical user interface (GUI) for pyiron the integrated development environment (IDE)
-
+Summary: Repository for GUI plugins to the pyiron IDE.
 
 Current build status
 ====================
