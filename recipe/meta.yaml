@@ -1,5 +1,5 @@
 {% set name = "pyiron_gui" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_gui-{{ version }}.tar.gz
-  sha256: d90c5d086eb8bb9d835bbc2be0d826db43d69898821718e619a10f587e108183
+  sha256: 5752f40ef288d442cd7a001e2418e34562d8f380e50a5b4a7a704bb4f20e98c7
 
 build:
   noarch: python
@@ -20,14 +20,14 @@ requirements:
     - pip
   run:
     - python >=3.5
-    - pyiron_base >=0.6.9
-    - pyiron_atomistics >=0.3.6
-    - ipywidgets >=8.1.1
-    - matplotlib-base >=3.8.1
-    - nbconvert >=7.11.0
-    - nbformat >=5.9.2
-    - numpy >=1.26.0
-    - pandas >=2.1.3
+    - pyiron_base >=0.7.7
+    - pyiron_atomistics >=0.4.17
+    - ipywidgets >=8.1.2
+    - matplotlib-base >=3.8.3
+    - nbconvert >=7.16.2
+    - nbformat >=5.10.3
+    - numpy >=1.26.4
+    - pandas >=2.2.0
 
 test:
   imports:
